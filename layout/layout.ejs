@@ -1,0 +1,92 @@
+<% var pageTitle=page.title || config.subtitle || '' ; if (is_archive()) pageTitle='Archives' ; if (is_tag())
+  pageTitle='Tag: ' + page.tag; if (is_category()) pageTitle='Category: ' + page.category; if (is_month()) pageTitle
+  +=': ' + page.month + '/' + page.year; if (is_year()) pageTitle +=': ' + page.year; %>
+  <!DOCTYPE html>
+  <html lang="<%=config.language%>">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      <%=pageTitle%>
+    </title>
+    <% if (theme.stylesheets !==undefined && theme.stylesheets.length> 0) { %>
+      <% theme.stylesheets.forEach(url=> { %>
+        <link rel="stylesheet" href="<%=url%>">
+        <% }); %>
+          <% } %>
+  </head>
+
+  <body>
+    <!-- menu -->
+    <%-partial('partials/headertop')%>
+      <div class="header-top">
+        <div class="header-flex"><a href="/"></a>
+          <img class="icon" src=<%=theme.logo%> alt=""> 
+        </div>
+        <div class="menu-list">
+          <% Object.keys(theme.menu).forEach(key=> { %>
+            <a href="<%=theme.menu[key]%>">
+              <%=key%>
+            </a>
+            <% }); %>
+        </div>
+        <img class="list" id="list" src=<%=theme.svg.list %> alt="">
+      </div>
+      <!-- banner -->
+      <%-partial('partials/banner')%>
+        <!-- heroes -->
+        <div id="content-outer">
+          <div id="content-inner">
+            <main class="container">
+              <div class="row g-5">
+                <div class="col-md-8">
+                  <%- body %>
+                </div>
+                <div class="col-md-4">
+                  <form class="d-flex">
+                      <div class="input-container">
+                        <input type="text" id="local-search-input" required="" placeholder="<%- theme.search.placeholder%> " aria-label="Search"/>
+                        <label for="input" class="label">Search</label>
+                        <div class="underline"></div>
+                      </div>
+                  </form>
+                  <div id="local-search-result"></div>
+
+                  <%-partial('partials/sidebar')%>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+        <!-- footer -->
+        <div id="bottom-outer">
+          <div id="bottom-inner">
+            Made with 💛 by
+            <a href="https://github.com/XUSHAO11/lengux.git"> LengUx </a>
+            and some fantastic contributors! <a href="http://hexo.io">hexo blog framework</a>
+          </div>
+        </div>
+
+        <!-- js -->
+        <div id="scrolTOP"><img src="/img/rocket.svg" alt=""></div>
+
+  </body>
+  <% if (theme.scripts !==undefined && theme.scripts.length> 0) { %>
+    <% theme.scripts.forEach(url=> { %>
+      <script src="<%=url%>"></script>
+      <% }); %>
+        <% } %>
+
+  </html>
+  <!-- search -->
+  <%- js('js/search.js') %>
+
+    <script type="text/javascript">
+      var search_path = "<%= config.search.path %>";
+      if (search_path.length == 0) {
+        search_path = "search.xml";
+      }
+      var path = "<%= config.root %>" + search_path;
+      searchFunc(path, 'local-search-input', 'local-search-result');
+    </script>

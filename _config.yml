@@ -1,0 +1,57 @@
+# html lang
+language: en
+# title
+title: ""
+# logo
+## https://avatars.githubusercontent.com/u/52852249?v=4
+logo: /img/logo.png
+# avatars
+avatars: https://avatars.githubusercontent.com/u/52852249?v=4
+#---------------------------
+# 全局
+# Global
+#---------------------------
+
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Tag: /tag
+  # Contact: /contact
+  Category: /category
+  Archives: /archives
+
+# 用于浏览器标签的图标
+# Icon for browser tab
+svg:
+  github: /img/github.svg
+  twitter: /img/twitter.svg
+  display: /img/display.svg
+  list: /img/list.svg
+  rocket: /img/github.svg
+  stickies: /img/github.svg
+  arrowdown: /img/github.svg
+  hand-index: /img/github.svg
+
+# 文章一列aListOf 两列two-row
+## 默认两列
+textSplitting: aListOf
+
+# 本地搜索
+search:
+  path: search.xml
+  field: post
+  content: true
+  template: themes/lengux/search.xml
+
+# stylesheets loaded in the <head>
+stylesheets:
+  - /css/lengux.css
+
+# scripts loaded in the end of the body
+scripts:
+  - /js/bootstrap.bundle.min.js
+  - /js/jquery-2.0.2.min.js
+  - /js/lengux.js
+  - /js/search.js

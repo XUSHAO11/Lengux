@@ -1,0 +1,146 @@
+.tagwrapper {
+    margin: 0 auto;
+    padding: 0;
+    height: 220px;
+    width: 700px;
+    min-width: 100px;
+}
+
+.tagbubble {
+    position: relative;
+    margin-top: 300px;
+}
+
+.tagbubble a {
+    display: block;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.b0 {
+    width: 95px;
+    height: 90px;
+    line-height: 90px;
+}
+
+.b1 {
+    width: 70px;
+    height: 70px;
+    line-height: 55px;
+}
+
+.b2 {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.b3 {
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+}
+
+.c0 {
+    background: -moz-linear-gradient(top, #d1e5fd 0%, #3d86f4 100%);
+    background: -webkit-linear-gradient(top, #d1e5fd 0%, #3d86f4 100%);
+    background: -o-linear-gradient(top, #d1e5fd 0%, #3d86f4 100%);
+    background: -ms-linear-gradient(top, #d1e5fd 0%, #3d86f4 100%);
+    background: linear-gradient(to bottom, #d1e5fd 0%, #3d86f4 100%);
+}
+
+.c1 {
+    background: -moz-linear-gradient(top, #b9f8ff 0%, #1de7ff 100%);
+    background: -webkit-linear-gradient(top, #b9f8ff 0%, #1de7ff 100%);
+    background: -o-linear-gradient(top, #b9f8ff 0%, #1de7ff 100%);
+    background: -ms-linear-gradient(top, #b9f8ff 0%, #1de7ff 100%);
+    background: linear-gradient(to bottom, #b9f8ff 0%, #1de7ff 100%);
+}
+
+.c2 {
+    background: -moz-linear-gradient(top, #fff4e2 0%, #ffd79c 100%);
+    background: -webkit-linear-gradient(top, #fff4e2 0%, #ffd79c 100%);
+    background: -o-linear-gradient(top, #fff4e2 0%, #ffd79c 100%);
+    background: -ms-linear-gradient(top, #fff4e2 0%, #ffd79c 100%);
+    background: linear-gradient(to bottom, #fff4e2 0%, #ffd79c 100%);
+}
+
+.c3 {
+    background: -moz-linear-gradient(top, #fef4fa 0%, #fbbae0 100%);
+    background: -webkit-linear-gradient(top, #fef4fa 0%, #fbbae0 100%);
+    background: -o-linear-gradient(top, #fef4fa 0%, #fbbae0 100%);
+    background: -ms-linear-gradient(top, #fef4fa 0%, #fbbae0 100%);
+    background: linear-gradient(to bottom, #fef4fa 0%, #fbbae0 100%);
+}
+
+.c4 {
+    background: -moz-linear-gradient(top, #fedc90 0%, #ffb515 100%);
+    background: -webkit-linear-gradient(top, #fedc90 0%, #ffb515 100%);
+    background: -o-linear-gradient(top, #fedc90 0%, #ffb515 100%);
+    background: -ms-linear-gradient(top, #fedc90 0%, #ffb515 100%);
+    background: linear-gradient(to bottom, #fedc90 0%, #ffb515 100%);
+}
+
+.c5 {
+    background: -moz-linear-gradient(top, #bcf7ca 0%, #1fda4b 100%);
+    background: -webkit-linear-gradient(top, #bcf7ca 0%, #1fda4b 100%);
+    background: -o-linear-gradient(top, #bcf7ca 0%, #1fda4b 100%);
+    background: -ms-linear-gradient(top, #bcf7ca 0%, #1fda4b 100%);
+    background: linear-gradient(to bottom, #bcf7ca 0%, #1fda4b 100%);
+}
+
+.c6 {
+    background: -moz-linear-gradient(top, #f7cdf8 0%, #db43e7 100%);
+    background: -webkit-linear-gradient(top, #f7cdf8 0%, #db43e7 100%);
+    background: -o-linear-gradient(top, #f7cdf8 0%, #db43e7 100%);
+    background: -ms-linear-gradient(top, #f7cdf8 0%, #db43e7 100%);
+    background: linear-gradient(to bottom, #f7cdf8 0%, #db43e7 100%);
+}
+
+/* 移动端样式 */
+@media (max-width: 767px) {
+    .tagwrapper {
+        width: 10px;
+        margin-left: 20px;
+        min-width: 0px;
+    }
+
+    .tagbubble {
+        width: 300px;
+        min-width: 0px;
+        margin-top: 200px;
+        margin-left: 10px;
+    }
+
+    .tagbubble a {
+        font-size: 13px;
+    }
+
+    .b0 {
+        width: 65px;
+        height: 65px;
+        line-height: 60px;
+    }
+
+    .b1 {
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+    }
+
+    .b2 {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .b3 {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}

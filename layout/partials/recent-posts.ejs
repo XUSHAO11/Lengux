@@ -1,0 +1,61 @@
+<% if (page.posts.length> 0) { %>
+  <% if (theme.textSplitting==="two-row" ) {%>
+    <div class="row mb-2">
+      <% page.posts.sort('date', -1).limit(10).each(post=> { %>
+        <div class="col-md-6">
+          <a href="<%=url_for(post.path)%>">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0">
+                  <%=post.title%>
+                </h3>
+                <div class="mb-1 text-muted">
+                  <%=post.article%>
+                </div>
+                <p class="card-text mb-auto">
+                  <%=post.intro%>
+                </p>
+                <tim e datetime="<%=post.date.toJSON()%>" class="stretched-link">
+                  <%=date(post.date)%>
+                </tim>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img" width="100%" height="250" src=<%=post.img%> alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <% }); %>
+    </div>
+    <%}else if(theme.textSplitting==="aListOf" ) { %>
+      <div class="pageluist">
+        <% page.posts.sort('date', -1).limit(10).each(post=> { %>
+          <div class="col-md-6">
+            <img class="bd-placeholder-img" id="bd-placeholder-img" width="100%" height="250" src=<%=post.img%> alt="">
+
+            <a href="<%=url_for(post.path)%>">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">
+                    <%=post.title%>
+                  </h3>
+                  <div class="mb-1 text-muted">
+                    <%=post.article%>
+                  </div>
+                  <p class="card-text mb-auto">
+                    <%=post.intro%>
+                  </p>
+                  <tim e datetime="<%=post.date.toJSON()%>" class="stretched-link">
+                    <%=date(post.date)%>
+                  </tim>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" width="100%" height="250" src=<%=post.img%> alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <% }); %>
+      </div>
+      <% } %>
+        <% } %>
