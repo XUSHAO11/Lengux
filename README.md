@@ -3,7 +3,6 @@
 
 ## 💻 Installation
 
-### github下载
 
 Stable branch [recommend]:
 
