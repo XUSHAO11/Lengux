@@ -8,5 +8,5 @@
 Stable branch [recommend]:
 
 ```
-git clone https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+git clone https://github.com/XUSHAO11/Lengux.git
 ```
