@@ -16,13 +16,38 @@
         <% }); %>
           <% } %>
   </head>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script> -->
+  <script>
+    function addDarkmodeWidget() {
+      // new Darkmode().showWidget();
+      const options = {
+        bottom: '64px', // default: '32px'
+        right: 'unset', // default: '32px'
+        left: '32px', // default: 'unset'
+        time: '0.5s', // default: '0.3s'
+        mixColor: '#fff', // default: '#fff'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: false, // default: true,
+        label: '🌓', // default: ''
+        autoMatchOsTheme: true // default: true
+      }
+
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+
+
+  </script>
 
   <body>
     <!-- menu -->
     <%-partial('partials/headertop')%>
       <div class="header-top">
         <div class="header-flex"><a href="/"></a>
-          <img class="icon" src=<%=theme.logo%> alt=""> 
+          <img class="icon" src=<%=theme.logo%> alt="">
         </div>
         <div class="menu-list">
           <% Object.keys(theme.menu).forEach(key=> { %>
@@ -45,11 +70,12 @@
                 </div>
                 <div class="col-md-4">
                   <form class="d-flex">
-                      <div class="input-container">
-                        <input type="text" id="local-search-input" required="" placeholder="<%- theme.search.placeholder%> " aria-label="Search"/>
-                        <label for="input" class="label">Search</label>
-                        <div class="underline"></div>
-                      </div>
+                    <div class="input-container">
+                      <input type="text" id="local-search-input" required=""
+                        placeholder="<%- theme.search.placeholder%> " aria-label="Search" />
+                      <label for="input" class="label">Search</label>
+                      <div class="underline"></div>
+                    </div>
                   </form>
                   <div id="local-search-result"></div>
 

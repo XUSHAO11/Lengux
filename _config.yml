@@ -55,3 +55,5 @@ scripts:
   - /js/jquery-2.0.2.min.js
   - /js/lengux.js
   - /js/search.js
+  - /js/darkmode-js.min.js
+  - /js/dark.js
