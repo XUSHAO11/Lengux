@@ -17,9 +17,9 @@ avatars: https://avatars.githubusercontent.com/u/52852249?v=4
 menu:
   Home: /
   About: /about
-  Tag: /tag
+  # Tag: /tag
   # Contact: /contact
-  Category: /category
+  # Category: /category
   Archives: /archives
 
 # 用于浏览器标签的图标
