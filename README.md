@@ -38,7 +38,7 @@ article: "文章标签"
 - [x] 响应式网页设计
 - [x] 评论 （valine)
 - [x] 打字机效果
-- [x] darkmode🌓
+- [x] <a herf="https://darkmodejs.learn.uno/">darkmode🌓</a>
 
 ## ✨ Contributors
 
