@@ -12,13 +12,22 @@ git clone https://github.com/XUSHAO11/Lengux.git
 ```
 theme: Lengux
 ```
-根目录安装依赖
+### 根目录安装依赖
 
 ```
 npm i hexo-renderer-sass
 npm i hexo-generator-search
 ```
+### 文章标题配置
 
+```
+---
+title: "文章标题"
+intro: "文章副标题"
+img: "文章封面"
+article: "文章标签"
+---
+```
 
 > theme: Lengux
 
