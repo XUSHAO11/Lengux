@@ -2,7 +2,10 @@
 
 ## 💻 Installation
 
-Stable branch [recommend]:
+```
+git clone https://github.com/XUSHAO11/Lengux.git
+```
+
 > node>=12
 > 进入主题themes 安装
 > 修改hexo根目录 _config.yml
@@ -11,8 +14,6 @@ Stable branch [recommend]:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: Lengux
-```
-git clone https://github.com/XUSHAO11/Lengux.git
 ```
 > theme: Lengux
 
