@@ -3,6 +3,7 @@
 ## 💻 Installation
 
 Stable branch [recommend]:
+> node>=12
 
 ```
 git clone https://github.com/XUSHAO11/Lengux.git
