@@ -4,7 +4,13 @@
 
 Stable branch [recommend]:
 > node>=12
-
+> 进入主题themes 安装
+> 修改hexo根目录 _config.yml
+```
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: Lengux
 ```
 git clone https://github.com/XUSHAO11/Lengux.git
 ```
