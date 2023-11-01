@@ -11,6 +11,8 @@ git clone https://github.com/XUSHAO11/Lengux.git
 - 修改hexo根目录 _config.yml
 ```
 theme: Lengux
+prismjs:
+  enable: true #代码高亮，不打开的话，文章代码片段会出错
 ```
 ### 根目录安装依赖
 
@@ -28,7 +30,6 @@ img: "文章封面"
 article: "文章标签"
 ---
 ```
-
 > theme: Lengux
 
 ## 🎉 Features
