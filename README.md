@@ -6,15 +6,20 @@
 git clone https://github.com/XUSHAO11/Lengux.git
 ```
 
-> node>=12
-> 进入主题themes 安装
-> 修改hexo根目录 _config.yml
+- node>=12
+- 进入主题themes 使用git安装
+- 修改hexo根目录 _config.yml
 ```
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: Lengux
 ```
+根目录安装依赖
+
+```
+npm i hexo-renderer-sass
+npm i hexo-generator-search
+```
+
+
 > theme: Lengux
 
 ## 🎉 Features
