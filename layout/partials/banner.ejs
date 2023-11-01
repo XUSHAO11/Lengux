@@ -1,6 +1,6 @@
-<div class="p-4 p-md-5 mb-4 rounded">
+<div class="p-4 p-md-5 mb-4 rounded" style="height: 100vh;">
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src=<%=theme.avatars%> alt="" style="width: 20%;height: 20%;">
+        <img class="d-block mx-auto mb-4" src=<%=theme.avatars%> alt="" style="width: 200px;height: 200px;">
         <div class="display-5 fw-bold">
             <div class="wrapper">
                 <div class="typing-demo">This is a Lengux blog.</div>
@@ -17,9 +17,39 @@
                 <img src=<%=theme.svg.display%> alt="">
             </div>
         </div>
+
+
+        <div id="aplayer"></div>
     </div>
 
     <div class="updown">
         <img id="updown" src="/img/arrow-down.svg" alt="">
     </div>
 </div>
+<link rel="stylesheet" href="/css/APlayer.min.css">
+<script src="/js/APlayer.min.js"></script>
+<script>
+    const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        theme: '#e9e9e9',
+        audio: [{
+            name: '晴天',
+            artist: '周杰伦',
+            url: '/周杰伦 - 晴天.flac',
+            cover: '/musicimg/T002R300x300M000000MkMni19ClKG_4.webp'
+        }]
+    });
+</script>
+<style>
+    .aplayer {
+        margin-top: 50px;
+    }
+
+    @media (min-width: 768px) {
+        .aplayer {
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    }
+</style>

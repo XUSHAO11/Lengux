@@ -54,6 +54,8 @@ scripts:
   - /js/bootstrap.bundle.min.js
   - /js/jquery-2.0.2.min.js
   - /js/lengux.js
+  # 本地搜索
   - /js/search.js
+  # 深色模式
   - /js/darkmode-js.min.js
   - /js/dark.js

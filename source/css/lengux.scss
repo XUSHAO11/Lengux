@@ -207,10 +207,18 @@ pre[class*="language-"] {
   background-color: #ffffff;
   overflow: hidden;
 }
-
+.darkmode-toggle{
+  z-index: 999999;
+}
 @media (max-width: 768px) {
   #bd-placeholder-img {
     display: block;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .rounded{
+    border-top-right-radius: none !important;
+    border-top-left-radius: none !important;
   }
 }
 @media (min-width: 768px) {

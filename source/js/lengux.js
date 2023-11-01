@@ -22,7 +22,6 @@ $(document).ready(function () {
       }, 10);
 
     }
-
   })
   $(window).scroll(function () {
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;

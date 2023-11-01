@@ -127,7 +127,7 @@
 #scrolTOP {
   position: fixed;
   right: 20px;
-  bottom: 20%;
+  bottom: 15%;
   transition: all 0.3s;
   opacity: 0;
 }
@@ -137,7 +137,6 @@
   right: 20px;
   bottom: 200px;
   opacity: 1 !important;
-  animation: 1s linear 0s infinite move_eye;
 }
 #linkshear {
   display: flex !important;
@@ -150,15 +149,6 @@
   width: 100px;
 }
 
-@keyframes move_eye {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    bottom: 25%;
-  }
-}
 
 @media (max-width: 768px) {
   .menu-list {

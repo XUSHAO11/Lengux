@@ -24,6 +24,19 @@ const observer = new MutationObserver(function(mutationsList) {
             'color': '#f4f4f4',
           });
           
+      }else{
+        $('.header-top').css({
+          'border-bottom': '1px solid #f1f4f8;',
+        });
+        $('.position-static').css({
+          'color': 'black',
+        });
+        $('.list-unstyled>li>a').css({
+          'color': 'black',
+        });
+        $('.fst-italic').css({
+          'color': 'black',
+        });
       }
     }
   }
