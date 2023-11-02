@@ -7,7 +7,6 @@ git clone https://github.com/XUSHAO11/Lengux.git
 ```
 
 - node>=12
-- 进入主题themes 使用git安装
 - 修改hexo根目录 _config.yml
 ```
 theme: Lengux
