@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%=theme.title%>-<%=page.title%>
+  </title>
+</head>
+<% if (theme.stylesheets !==undefined && theme.stylesheets.length> 0) { %>
+  <% theme.stylesheets.forEach(url=> { %>
+    <link rel="stylesheet" href="<%=url%>">
+    <% }); %>
+      <% } %>
+
+        <body>
+          <%- partial('partials/headertop')%>
+            <%- partial('partials/head') %>
+              <%- partial('partials/banner')%>
+                <div id="content-outer">
+                  <div id="content-inner">
+                    <main class="container">
+                      <div class="row g-5">
+                        <div class="col-md-8">
+                          <%- body %>
+                        </div>
+                        <div class="col-md-4">
+                          <%- partial('partials/sidebar')%>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+                <%- partial('partials/footer')%>
+                  <%- partial('partials/_global/scroltop')%>
+        </body>
+        <% if (theme.scripts !==undefined && theme.scripts.length> 0) { %>
+          <% theme.scripts.forEach(url=> { %>
+            <script src="<%=url%>"></script>
+            <% }); %>
+              <% } %>
+
+</html>
+<%- js('js/search.js') %>
+  <script type="text/javascript">
+    var search_path = "<%= config.search.path %>";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "<%= config.root %>" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+  </script>
+
+  <%- partial('partials/_global/dark')%>

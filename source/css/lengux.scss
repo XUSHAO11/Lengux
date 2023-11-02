@@ -194,7 +194,6 @@ pre[class*="language-"] {
     padding: 0 10px;
   }
 }
-
 .archive-item {
   display: flex;
   justify-content: space-between;
@@ -244,5 +243,7 @@ pre[class*="language-"] {
   }
 }
 @import "./bootstrap.min.css";
-@import "./layout.scss";
+@import "./layout/header.scss"; 
 @import "./index.scss";
+@import "./layout.scss";
+

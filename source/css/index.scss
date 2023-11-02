@@ -17,65 +17,6 @@
     padding: 20px;
   }
 }
-.headertop {
-  background-image: radial-gradient(
-      circle at 4% 15%,
-      #eee 0%,
-      #eee 1.5%,
-      transparent calc(1.5% + 1px),
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 4% 50%,
-      #eee 0%,
-      #eee 1.5%,
-      transparent calc(1.5% + 1px),
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 4% 85%,
-      #eee 0%,
-      #eee 1.5%,
-      transparent calc(1.5% + 1px),
-      transparent 100%
-    ),
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent 10%,
-      #db676c 10%,
-      #db676c calc(10% + 2px),
-      transparent calc(10% + 2px),
-      transparent 100%
-    ),
-    linear-gradient(180deg, white 12%, transparent 12%),
-    repeating-linear-gradient(
-      180deg,
-      #91c1e1 0px,
-      #91c1e1 1px,
-      transparent 1px,
-      transparent 30px
-    ),
-    linear-gradient(white, white);
-    
-  .menu-list {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: 67px;
-    margin-left: 50px;
-    line-height: 30px;
-    a{
-        font-family: EduTASBeginnera;
-    }
-  }
-  .menu-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 50px;
-  }
-}
 .s-sticker {
   display: flex;
   align-items: flex-end;
@@ -95,7 +36,9 @@
 .updown{
   position: relative;
 }
-
+.darklengux{
+  text-align: center;
+}
 @keyframes up-0dowm {
   from {
     opacity: 1;

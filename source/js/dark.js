@@ -20,7 +20,15 @@ const observer = new MutationObserver(function(mutationsList) {
           $('.fst-italic').css({
             'color': '#f4f4f4',
           });
-          
+          $('.button-text').css({
+            'color': '#f4f4f4',
+          });
+          $('.circle').css({
+            'background': '#333',
+          });
+          $('.darklengux').css({
+            'color': '#333',
+          });
       }else{
         $('.position-static').css({
           'color': 'black',
@@ -31,6 +39,13 @@ const observer = new MutationObserver(function(mutationsList) {
         $('.fst-italic').css({
           'color': 'black',
         });
+        $('.button-text').css({
+          'color': '#333',
+        });
+        $('.circle').css({
+          'background': '#ddd',
+        });
+        
       }
     }
   }

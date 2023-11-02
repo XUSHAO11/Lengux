@@ -1,7 +1,7 @@
 # html lang
 language: en
 # title
-title: ""
+title: "Lengux"
 # logo
 ## https://avatars.githubusercontent.com/u/52852249?v=4
 logo: /img/logo.png
@@ -14,12 +14,10 @@ avatars: https://avatars.githubusercontent.com/u/52852249?v=4
 
 # main menu navigation
 menu:
-  Home: /
-  About: /about
-  # Tag: /tag
-  # Contact: /contact
-  # Category: /category
-  Archives: /archives
+  首页: /
+  关于: /about
+  分类: /categories
+  归档: /archives
 
 # 用于浏览器标签的图标
 # Icon for browser tab
