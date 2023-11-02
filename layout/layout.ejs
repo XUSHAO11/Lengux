@@ -43,23 +43,26 @@
   </script>
 
   <body>
-    <!-- menu -->
-    <%-partial('partials/headertop')%>
-      <div class="header-top">
-        <div class="header-flex"><a href="/"></a>
-          <img class="icon" src=<%=theme.logo%> alt="">
+        <!-- menu -->
+      <%-partial('partials/headertop')%>
+        <div class="header-top">
+          <div class="header-flex"><a href="/">
+            <img class="icon" src=<%=theme.logo%> alt="">
+          </a>
+          </div>
+          <div class="menu-list">
+            <% Object.keys(theme.menu).forEach(key=> { %>
+              <a href="<%=theme.menu[key]%>">
+                <%=key%>
+              </a>
+              <% }); %>
+          </div>
+          <img class="list" id="list" src=<%=theme.svg.list %> alt="">
         </div>
-        <div class="menu-list">
-          <% Object.keys(theme.menu).forEach(key=> { %>
-            <a href="<%=theme.menu[key]%>">
-              <%=key%>
-            </a>
-            <% }); %>
-        </div>
-        <img class="list" id="list" src=<%=theme.svg.list %> alt="">
-      </div>
-      <!-- banner -->
-      <%-partial('partials/banner')%>
+        <!-- banner -->
+        <%-partial('partials/banner')%>
+    
+    
         <!-- heroes -->
         <div id="content-outer">
           <div id="content-inner">

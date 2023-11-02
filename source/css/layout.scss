@@ -148,7 +148,12 @@
 .icon {
   width: 100px;
 }
-
+.bannerbg{
+    background-image: url("/img/pick/bannerbg.jpg"); 
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #ffffff !important;
+}
 
 @media (max-width: 768px) {
   .menu-list {

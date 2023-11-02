@@ -12,7 +12,6 @@ avatars: https://avatars.githubusercontent.com/u/52852249?v=4
 # Global
 #---------------------------
 
-
 # main menu navigation
 menu:
   Home: /
@@ -25,18 +24,27 @@ menu:
 # 用于浏览器标签的图标
 # Icon for browser tab
 svg:
+  # banner icon
   github: /img/github.svg
   twitter: /img/twitter.svg
   display: /img/display.svg
+  # 列表
   list: /img/list.svg
+  # 置顶
   rocket: /img/github.svg
+  # 代码行复制
   stickies: /img/github.svg
+  # banner向下滚动
   arrowdown: /img/github.svg
+  # 代码行折叠
   hand-index: /img/github.svg
 
 # 文章一列aListOf 两列two-row
 ## 默认两列
 textSplitting: aListOf
+
+# 开启banner 背景图
+bannerbg: true
 
 # 本地搜索
 search:
