@@ -61,8 +61,6 @@
         </div>
         <!-- banner -->
         <%-partial('partials/banner')%>
-    
-    
         <!-- heroes -->
         <div id="content-outer">
           <div id="content-inner">
@@ -72,16 +70,6 @@
                   <%- body %>
                 </div>
                 <div class="col-md-4">
-                  <form class="d-flex">
-                    <div class="input-container">
-                      <input type="text" id="local-search-input" required=""
-                        placeholder="<%- theme.search.placeholder%> " aria-label="Search" />
-                      <label for="input" class="label">Search</label>
-                      <div class="underline"></div>
-                    </div>
-                  </form>
-                  <div id="local-search-result"></div>
-
                   <%-partial('partials/sidebar')%>
                 </div>
               </div>
@@ -108,14 +96,15 @@
         <% } %>
 
   </html>
-  <!-- search -->
-  <%- js('js/search.js') %>
 
-    <script type="text/javascript">
-      var search_path = "<%= config.search.path %>";
-      if (search_path.length == 0) {
-        search_path = "search.xml";
-      }
-      var path = "<%= config.root %>" + search_path;
-      searchFunc(path, 'local-search-input', 'local-search-result');
-    </script>
+   <!-- search -->
+ <%- js('js/search.js') %>
+
+ <script type="text/javascript">
+   var search_path = "<%= config.search.path %>";
+   if (search_path.length == 0) {
+     search_path = "search.xml";
+   }
+   var path = "<%= config.root %>" + search_path;
+   searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>

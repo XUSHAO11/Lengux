@@ -115,14 +115,12 @@
 .screen-headerblock {
   height: 500px;
 }
-
-#content-outer {
-  margin-top: 200px;
-}
 #bottom-outer {
   padding: 20px 0;
   border-top: 1px solid #f1f4f8;
   text-align: center;
+  background-color: #314373;
+  color: #CBD2DC;
 }
 #scrolTOP {
   position: fixed;
@@ -147,12 +145,6 @@
 }
 .icon {
   width: 100px;
-}
-.bannerbg{
-    background-image: url("/img/pick/bannerbg.jpg"); 
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #ffffff !important;
 }
 
 @media (max-width: 768px) {

@@ -12,15 +12,14 @@
                 been tarring the roof of one of our own houses. We were the lords of all creation. As for Andy，he spent
                 that break hunkered in the shade，a strange little smile on his face，watching us drink his beer.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" id="linkshear">
-               <a href=<%= theme %></a>
                 <img src=<%=theme.svg.github%> alt="">
                 <img src=<%=theme.svg.twitter%> alt="">
                 <img src=<%=theme.svg.display%> alt="">
             </div>
         </div>
-
-
-        <div id="aplayer"></div>
+        <% if (theme.musicredio) { %>
+            <div id="aplayer"></div>
+            <%} %>
     </div>
 
     <div class="updown">
@@ -48,9 +47,9 @@
 
     @media (min-width: 768px) {
         .aplayer {
-        width: 20%;
-        left: 50%;
-        transform: translate(-50%);
-    }
+            width: 20%;
+            left: 50%;
+            transform: translate(-50%);
+        }
     }
 </style>

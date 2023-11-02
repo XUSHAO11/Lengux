@@ -43,8 +43,8 @@ svg:
 ## 默认两列
 textSplitting: aListOf
 
-# 开启banner 背景图
-bannerbg: true
+# 播放器 默认true打开、false关闭
+musicredio: true
 
 # 本地搜索
 search:
@@ -53,6 +53,12 @@ search:
   content: true
   template: themes/lengux/search.xml
 
+# 主页每页显示文章数
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  pagination_dir: page
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/lengux.css
