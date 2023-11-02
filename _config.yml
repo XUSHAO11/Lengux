@@ -60,6 +60,18 @@ search:
 #   order_by: -date
 #   pagination_dir: page
 # stylesheets loaded in the <head>
+
+# 打字机内容
+typewriter: This is a Lengux blog.
+
+# slider 侧栏一言
+hitokoto: https://v1.hitokoto.cn/?encode=js&select=%23hitokoto
+
+# banner 名言
+famousSaying: "We sat and drank with the sun on our shoulders and felt like free men. We could have
+                been tarring the roof of one of our own houses. We were the lords of all creation. As for Andy，he spent
+                that break hunkered in the shade，a strange little smile on his face，watching us drink his beer."
+
 stylesheets:
   - /css/lengux.css
 
