@@ -31,9 +31,6 @@
                 </svg>
             </div>
         </div>
-        <% if (theme.musicredio) { %>
-            <div id="aplayer"></div>
-            <%} %>
     </div>
     <svg id="updown" class="darksvg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
         class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
@@ -41,20 +38,6 @@
             d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
     </svg>
 </div>
-<link rel="stylesheet" href="/css/APlayer.min.css">
-<script src="/js/APlayer.min.js"></script>
-<script>
-    const ap = new APlayer({
-        container: document.getElementById('aplayer'),
-        theme: '#e9e9e9',
-        audio: [{
-            name: '晴天',
-            artist: '周杰伦',
-            url: 'http://s3huw8yvb.hn-bkt.clouddn.com/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E6%99%B4%E5%A4%A9.mp3',
-            cover: '/musicimg/T002R300x300M000000MkMni19ClKG_4.webp'
-        }]
-    });
-</script>
 <style>
     #updown {
         position: absolute;
@@ -74,24 +57,6 @@
         to {
             opacity: 0;
             margin-bottom: 0;
-        }
-    }
-
-    .aplayer {
-        margin-top: 50px;
-    }
-
-    @media (min-width: 768px) {
-        .aplayer {
-            width: 20%;
-            left: 50%;
-            transform: translate(-50%);
-        }
-    }
-
-    @media (max-width: 800px) {
-        .aplayer {
-            display: none;
         }
     }
 </style>

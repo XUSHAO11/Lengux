@@ -36,7 +36,7 @@ svg:
 
 
 # 播放器 默认true打开、false关闭
-musicredio: true
+musicredio: false
 
 # 本地搜索
 search:
