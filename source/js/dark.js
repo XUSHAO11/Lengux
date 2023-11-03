@@ -11,9 +11,7 @@ const observer = new MutationObserver(function(mutationsList) {
         // 类名 'darkmode--activated' 已添加
         // 在此执行你的操作
         console.log("Dark mode activated");
-          $('.position-static').css({
-            'color': '#f4f4f4',
-          });
+         
           $('.list-unstyled>li>a').css({
             'color': '#f4f4f4',
           });
@@ -26,9 +24,15 @@ const observer = new MutationObserver(function(mutationsList) {
           $('.circle').css({
             'background': '#333',
           });
-          $('.darklengux').css({
-            'color': '#333',
-          });
+          $('#list').css({
+            'stroke':'red'
+          })
+          $('.darksvg').css({
+            'stroke':'white'
+          })
+          $('#linkshear>.darksvg').css({
+            'stroke':'black'
+          })
       }else{
         $('.position-static').css({
           'color': 'black',
@@ -45,7 +49,13 @@ const observer = new MutationObserver(function(mutationsList) {
         $('.circle').css({
           'background': '#ddd',
         });
-        
+        $('.darksvg').css({
+          'stroke':'black'
+        })
+        $('#list').css({
+          'stroke':'black'
+        })
+       
       }
     }
   }

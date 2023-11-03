@@ -1,5 +1,5 @@
 .header-top {
-  // position: fixed;
+  position: fixed;
   width: 100%;
   height: 80px;
   display: flex;
@@ -82,9 +82,6 @@
     }
   }
   .menu-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-left: 50px;
   }
 }

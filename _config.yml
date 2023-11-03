@@ -15,9 +15,10 @@ avatars: https://avatars.githubusercontent.com/u/52852249?v=4
 # main menu navigation
 menu:
   首页: /
-  关于: /about
-  分类: /categories
+  # 关于: /about
+  # 分类: /categories
   归档: /archives
+  友链: /link
 
 # md文章默认
 page:
@@ -28,24 +29,11 @@ page:
 # 用于浏览器标签的图标
 # Icon for browser tab
 svg:
-  # banner icon
-  github: /img/github.svg
-  twitter: /img/twitter.svg
-  display: /img/display.svg
-  # 列表
-  list: /img/list.svg
-  # 置顶
-  rocket: /img/github.svg
   # 代码行复制
   stickies: /img/github.svg
-  # banner向下滚动
-  arrowdown: /img/github.svg
   # 代码行折叠
   hand-index: /img/github.svg
 
-# 文章一列aListOf 两列two-row
-## 默认两列
-textSplitting: aListOf
 
 # 播放器 默认true打开、false关闭
 musicredio: true
@@ -56,14 +44,6 @@ search:
   field: post
   content: true
   template: themes/lengux/search.xml
-
-# # 主页每页显示文章数
-# index_generator:
-#   path: ''
-#   per_page: 10
-#   order_by: -date
-#   pagination_dir: page
-# stylesheets loaded in the <head>
 
 # 打字机内容
 typewriter: This is a Lengux blog.
@@ -76,6 +56,12 @@ famousSaying: "We sat and drank with the sun on our shoulders and felt like free
                 been tarring the roof of one of our own houses. We were the lords of all creation. As for Andy，he spent
                 that break hunkered in the shade，a strange little smile on his face，watching us drink his beer."
 
+
+# footer版权
+# Lengux-github
+Lenguxgithub: https://github.com/XUSHAO11/lengux.git
+Lenguxname: LengUx
+
 stylesheets:
   - /css/lengux.css
 
@@ -84,8 +70,6 @@ scripts:
   - /js/bootstrap.bundle.min.js
   - /js/jquery-2.0.2.min.js
   - /js/lengux.js
-  # 本地搜索
   - /js/search.js
-  # 深色模式
   - /js/darkmode-js.min.js
   - /js/dark.js
