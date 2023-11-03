@@ -85,4 +85,20 @@ document.addEventListener('visibilitychange', function () {
         }, 2000);
     }
 });
-
+  const egg = `
+                       
+ ██▓    ▓█████  ███▄    █   ▄████  █    ██ ▒██   ██▒
+ ▓██▒    ▓█   ▀  ██ ▀█   █  ██▒ ▀█▒ ██  ▓██▒▒▒ █ █ ▒░
+ ▒██░    ▒███   ▓██  ▀█ ██▒▒██░▄▄▄░▓██  ▒██░░░  █   ░
+ ▒██░    ▒▓█  ▄ ▓██▒  ▐▌██▒░▓█  ██▓▓▓█  ░██░ ░ █ █ ▒ 
+ ░██████▒░▒████▒▒██░   ▓██░░▒▓███▀▒▒▒█████▓ ▒██▒ ▒██▒
+ ░ ▒░▓  ░░░ ▒░ ░░ ▒░   ▒ ▒  ░▒   ▒ ░▒▓▒ ▒ ▒ ▒▒ ░ ░▓ ░
+ ░ ░ ▒  ░ ░ ░  ░░ ░░   ░ ▒░  ░   ░ ░░▒░ ░ ░ ░░   ░▒ ░
+   ░ ░      ░      ░   ░ ░ ░ ░   ░  ░░░ ░ ░  ░    ░  
+     ░  ░   ░  ░         ░       ░    ░      ░    ░        @Lengux. `;
+  console.log(egg);
+  console.log(
+    "%c  ",
+    "background: url(https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lpqpflo/ixigua_logo.svg) no-repeat"
+  )
+  
