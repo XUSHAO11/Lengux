@@ -8599,8 +8599,8 @@ fieldset:disabled .btn {
 }
 
 .my-5 {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important
+    /* margin-top: 3rem !important;
+    margin-bottom: 3rem !important */
 }
 
 .my-auto {
@@ -8800,8 +8800,8 @@ fieldset:disabled .btn {
 }
 
 .py-5 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important
+    /* padding-top: 3rem !important;
+    padding-bottom: 3rem !important */
 }
 
 .pt-0 {

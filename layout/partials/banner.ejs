@@ -3,12 +3,16 @@
         <img class="d-block mx-auto mb-4" src=<%=theme.avatars%> alt="" style="width: 200px;height: 200px;">
         <div class="display-5 fw-bold">
             <div class="wrapper">
-                <div class="typing-demo"><%=theme.typewriter%></div>
+                <div class="typing-demo">
+                    <%=theme.typewriter%>
+                </div>
             </div>
         </div>
 
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4"><%=theme.famousSaying%></p>
+            <p class="lead mb-4">
+                <%=theme.famousSaying%>
+            </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" id="linkshear">
                 <img src=<%=theme.svg.github%> alt="">
                 <img src=<%=theme.svg.twitter%> alt="">
@@ -20,9 +24,7 @@
             <%} %>
     </div>
 
-    <div class="updown">
-        <img id="updown" src="/img/arrow-down.svg" alt="">
-    </div>
+    <img id="updown" src="/img/arrow-down.svg" alt="">
 </div>
 <link rel="stylesheet" href="/css/APlayer.min.css">
 <script src="/js/APlayer.min.js"></script>
@@ -39,6 +41,27 @@
     });
 </script>
 <style>
+    #updown {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        animation: 1s linear 0s infinite up-0dowm;
+
+    }
+
+    @keyframes up-0dowm {
+        from {
+            opacity: 1;
+            margin-bottom: 20px;
+        }
+
+        to {
+            opacity: 0;
+            margin-bottom: 0;
+        }
+    }
+
     .aplayer {
         margin-top: 50px;
     }
@@ -48,6 +71,12 @@
             width: 20%;
             left: 50%;
             transform: translate(-50%);
+        }
+    }
+
+    @media (max-width: 800px) {
+        .aplayer {
+            display: none;
         }
     }
 </style>

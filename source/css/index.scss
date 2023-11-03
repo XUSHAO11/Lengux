@@ -26,30 +26,7 @@
     width: 100px;
   }
 }
-#updown{
-  position: absolute;
-  cursor: pointer;
-  left: 50%;
-  transform: translate(-50%);
-  animation: 1s linear 0s infinite up-0dowm;
-}
-.updown{
-  position: relative;
-}
-.darklengux{
-  text-align: center;
-}
-@keyframes up-0dowm {
-  from {
-    opacity: 1;
-    top: 5px;
-  }
-  to {
-    opacity: 0;
-    top: 30px;
-  }
-}
 @font-face {
-    font-family:EduTASBeginnera;
-     src:url("/font/PlaypenSans-VariableFont_wght.ttf");
- }
+  font-family: EduTASBeginnera;
+  src: url("/font/PlaypenSans-VariableFont_wght.ttf");
+}

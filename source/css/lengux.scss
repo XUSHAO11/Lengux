@@ -208,7 +208,11 @@ pre[class*="language-"] {
 .darkmode-toggle{
   z-index: 999999;
 }
+
 @media (max-width: 768px) {
+  #content-outer{
+    // margin-top: 200px;
+  }
   #bd-placeholder-img {
     display: block;
     border-top-right-radius: 10px;

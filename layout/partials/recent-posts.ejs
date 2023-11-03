@@ -2,42 +2,58 @@
   <div class="pageluist">
     <% page.posts.sort('date', -1).limit(10).each(post=> { %>
       <div class="col-md-6" id="jkld">
+        <% if (post.img) {%>
+          <img class="bd-placeholder-img" id="bd-placeholder-img" width="100%" height="250" src=<%=post.img%> alt="">
+          <% }else{ %>
+            <img class="bd-placeholder-img" id="bd-placeholder-img" width="100%" height="250" src=<%=theme.page.img%>
+            alt="">
+            <% } %>
+              <a href="<%=url_for(post.path)%>">
 
-        <img class="bd-placeholder-img" id="bd-placeholder-img" width="100%" height="250" src=<%=post.img%> alt="">
-        <a href="<%=url_for(post.path)%>">
+                <div class="row g-0  rounded overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
+                  <div class="col-auto d-none d-lg-block">
+                    <% if (post.img) {%>
+                      <img class="bd-placeholder-img" width="100%" height="250" src=<%=post.img%> alt="">
+                      <% }else{ %>
+                        <img class="bd-placeholder-img" width="100%" height="250" src=<%=theme.page.img%> alt="">
+                        <% } %>
+                  </div>
+                  <div class="col p-4 d-flex flex-column position-static" style="background-color: #f8f9fa;">
 
-          <div class="row g-0  rounded overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
-            <div class="col-auto d-none d-lg-block" style="padding: 20px;">
-              <img class="bd-placeholder-img" width="100%" height="250" src=<%=post.img%> alt="">
-            </div>
-            <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">
+                      <%=post.title%>
+                    </h3>
+                    <div class="mb-1 text-muted">
+                      <% if (post.article=="" ) {%>
+                        <%=theme.page.article%>
+                          <%} %>
+                            <%=post.article%>
+                    </div>
+                    <p class="card-text mb-auto">
+                      <% if (post.intro=="" ) {%>
+                        <%=theme.page.intro%>
+                          <%} %>
+                            <%=post.intro%>
+                    </p>
+                    <tim e datetime="<%=post.date.toJSON()%>" class="stretched-link">
+                      <div>
+                        <%=date(post.date)%>
+                      </div>
+                      <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
 
-              <h3 class="mb-0">
-                <%=post.title%>
-              </h3>
-              <div class="mb-1 text-muted">
-                <%=post.article%>
-              </div>
-              <p class="card-text mb-auto">
-                <%=post.intro%>
-              </p>
-              <tim e datetime="<%=post.date.toJSON()%>" class="stretched-link">
-                <div>
-                  <%=date(post.date)%>
+                        </span>
+                        <span class="button-text">阅读更多 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                          </svg> </span>
+                      </button>
+                    </tim>
+                  </div>
+
                 </div>
-                <button class="learn-more">
-                  <span class="circle" aria-hidden="true">
-
-                  </span>
-                  <span class="button-text">阅读更多  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                  </svg> </span>
-                </button>
-              </tim>
-            </div>
-
-          </div>
-        </a>
+              </a>
       </div>
       <% }); %>
   </div>

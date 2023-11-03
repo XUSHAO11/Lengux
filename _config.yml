@@ -19,6 +19,12 @@ menu:
   分类: /categories
   归档: /archives
 
+# md文章默认
+page:
+  article: hexo
+  intro: hexo new My New Post
+  img: https://img1.imgtp.com/2023/11/03/8oj1k5qo.jpg
+
 # 用于浏览器标签的图标
 # Icon for browser tab
 svg:
