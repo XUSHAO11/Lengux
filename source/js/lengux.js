@@ -2,8 +2,14 @@ $(document).ready(function () {
     $(".list").click(function(){
        if ($(".headertop").css("height")=="0px"){
         $(".headertop").addClass("screen-headerblock")
+        $(".header-top").css({
+          'top':'420px',
+        })
        }else{
         $(".headertop").removeClass("screen-headerblock")
+        $(".header-top").css({
+          'top':'0px',
+        })
        }               
     });
   // 置顶
