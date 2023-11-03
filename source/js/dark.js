@@ -25,13 +25,16 @@ const observer = new MutationObserver(function(mutationsList) {
             'background': '#333',
           });
           $('#list').css({
-            'stroke':'red'
+            'stroke':'white'
           })
           $('.darksvg').css({
             'stroke':'white'
           })
           $('#linkshear>.darksvg').css({
             'stroke':'black'
+          })
+          $('.header-top').css({
+            'background':'black'
           })
       }else{
         $('.position-static').css({
@@ -55,7 +58,9 @@ const observer = new MutationObserver(function(mutationsList) {
         $('#list').css({
           'stroke':'black'
         })
-       
+        $('.header-top').css({
+          'background':'white'
+        })
       }
     }
   }

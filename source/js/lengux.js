@@ -62,8 +62,9 @@ if ( $(".list").click) {
 }
 // 监听地址栏变化
 if (window.location.pathname !== "/" ) {
+  
   window.scrollTo({
-    top: 1004,
+    top: window.document.querySelector("#content-outer").offsetTop,
     behavior: "smooth"
 });
 }
