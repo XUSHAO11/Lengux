@@ -8086,7 +8086,9 @@ fieldset:disabled .btn {
 
 .position-sticky {
     position: -webkit-sticky !important;
-    position: sticky !important
+    top: 5rem;
+    position: sticky !important;
+    min-height: 900px;
 }
 
 .top-0 {

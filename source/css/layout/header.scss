@@ -1,14 +1,13 @@
 .header-top {
   position: fixed;
   width: 100%;
+  padding: 0 10%;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #f1f4f8;
-  background-color: #ffffff;
   top: 0;
-  z-index: 999;
+  z-index:9099999;
   transition: all .3s;
   .menu-list {
     a {
