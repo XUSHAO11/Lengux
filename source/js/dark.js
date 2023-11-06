@@ -35,7 +35,10 @@ const observer = new MutationObserver(function(mutationsList) {
           })
           $('.header-top').css({
             'background':'black'
-          })
+          })  
+          $('.menu-list>a').css({
+            'color':'#fff'
+          })  
       }else{
         $('.position-static').css({
           'color': 'black',
@@ -61,6 +64,9 @@ const observer = new MutationObserver(function(mutationsList) {
         $('.header-top').css({
           'background':'white'
         })
+        $('.menu-list>a').css({
+          'color':'black'
+        })  
       }
     }
   }

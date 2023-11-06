@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     $("#updown").click(()=>{
       window.scrollTo({
-        top: 1004,
+        top: window.document.querySelector("#content-outer").clientHeight,
         behavior: "smooth"
     });
     })
@@ -64,7 +64,7 @@ if ( $(".list").click) {
 if (window.location.pathname !== "/" ) {
   
   window.scrollTo({
-    top: window.document.querySelector("#content-outer").offsetTop,
+    top: window.document.querySelector("#content-outer").clientHeight,
     behavior: "smooth"
 });
 }
@@ -97,8 +97,3 @@ document.addEventListener('visibilitychange', function () {
    ░ ░      ░      ░   ░ ░ ░ ░   ░  ░░░ ░ ░  ░    ░  
      ░  ░   ░  ░         ░       ░    ░      ░    ░        @Lengux. `;
   console.log(egg);
-  console.log(
-    "%c  ",
-    "background: url(https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/lpqpflo/ixigua_logo.svg) no-repeat"
-  )
-  
