@@ -4,21 +4,21 @@ $(document).ready(function () {
       $(".headertop").addClass("screen-headerblock")
       $(".header-top").css({
         'top': '500px',
-        'background':'#fff'
+        'background': '#fff'
       })
     } else {
       $(".headertop").removeClass("screen-headerblock")
       $(".header-top").css({
         'top': '0px',
       })
-      
+
     }
-   
- 
+
+
   });
-  
+
   // 置顶
-  $("#scrolTOP").click(function () {
+  $("#toptop").click(function () {
     var myTimer = -1;
     var scrollTo = document.documentElement.scrollTop || document.body.scrollTop
     if (myTimer == -1) {
@@ -34,26 +34,7 @@ $(document).ready(function () {
 
     }
   })
-  $(window).scroll(function () {
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollTop === 0) {
-      $('.header-top').css({
-        'background': 'rgba(255,255,255,0)',
-        'border-bottom': 'none'
-      })
 
-    } else {
-      $('.header-top').css({
-        'background': 'rgba(255,255,255,255)',
-        // 'border-bottom': '1px solid #fff'
-      })
-    }
-    if (scrollTop >= 383) {
-      $("#scrolTOP").addClass("scrolTOP")
-    } else {
-      $("#scrolTOP").removeClass("scrolTOP")
-    }
-  })
   function getTime() {
     var date = new Date();
     var year = date.getFullYear(); //获取年份
@@ -71,6 +52,16 @@ $(document).ready(function () {
         behavior: "smooth"
       })
     });
+    var scrollToptop = document.documentElement.scrollTop || document.body.scrollTop
+    if (scrollToptop >= 600) {
+      $("#toptop").css({
+        'opacity': "1"
+      })
+    } else {
+      $("#toptop").css({
+        'opacity': "0"
+      })
+    }
 
   })
 });
@@ -90,7 +81,7 @@ if ($(".list").click) {
   $(window).resize(function () {
     $(".headertop").removeClass("screen-headerblock")
     $(".header-top").css({
-      'top':'0px'
+      'top': '0px'
     })
   });
 }

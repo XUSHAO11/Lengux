@@ -11,62 +11,28 @@ const observer = new MutationObserver(function(mutationsList) {
         // 类名 'darkmode--activated' 已添加
         // 在此执行你的操作
         console.log("Dark mode activated");
-         
+         $('.bgimg').css({
+            'color': '#f4f4f4',
+          });
           $('.list-unstyled>li>a').css({
             'color': '#f4f4f4',
           });
           $('.fst-italic').css({
-            'color': '#f4f4f4',
+            'color': '#fff',
           });
-          $('.button-text').css({
-            'color': '#f4f4f4',
-          });
-          $('.circle').css({
-            'background': '#333',
-          });
-          $('#list').css({
-            'stroke':'white'
-          })
-          $('.darksvg').css({
-            'stroke':'white'
-          })
-          $('#linkshear>.darksvg').css({
-            'stroke':'black'
-          })
-          $('.header-top').css({
-            'background':'black'
-          })  
-          $('.menu-list>a').css({
-            'color':'#fff'
-          })  
+         
+          
       }else{
-        $('.position-static').css({
-          'color': 'black',
+        $('.bgimg').css({
+          'color': '#212529',
         });
         $('.list-unstyled>li>a').css({
-          'color': 'black',
+          'color': '#212529',
         });
         $('.fst-italic').css({
-          'color': 'black',
+          'color': '#212529',
         });
-        $('.button-text').css({
-          'color': '#333',
-        });
-        $('.circle').css({
-          'background': '#ddd',
-        });
-        $('.darksvg').css({
-          'stroke':'black'
-        })
-        $('#list').css({
-          'stroke':'black'
-        })
-        $('.header-top').css({
-          'background':'white'
-        })
-        $('.menu-list>a').css({
-          'color':'black'
-        })  
+       
       }
     }
   }

@@ -41,10 +41,10 @@
 </div>
 <style>
     #updown {
-       position: absolute;
-       bottom: 0;
+        position: absolute;
+        bottom: 0;
         animation: 1s linear 0s infinite up-0dowm;
-
+        cursor: pointer;
     }
 
     @keyframes up-0dowm {
@@ -58,8 +58,15 @@
             margin-bottom: 0;
         }
     }
+
     .bgimg {
         position: relative;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 1) 85%),
+    radial-gradient(ellipse at top left, rgba(13, 110, 253, 0.5), transparent 50%),
+    radial-gradient(ellipse at top right, rgba(255, 228, 132, 0.5), transparent 50%),
+    radial-gradient(ellipse at center right, rgba(112, 52, 18, 0.5), transparent 50%),
+    radial-gradient(ellipse at center left, rgba(214, 51, 132, 0.5), transparent 50%);
+        /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+        /* background-image: linear-gradient(180deg, rgba(var(255,255,255), 0.01), rgba(var(255,255,255), 1) 85%),radial-gradient(ellipse at top left, rgba(var(13,110,253), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(255,228,132), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(112.52071844.062154,249.437846), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(214,51,132), 0.5), transparent 50%); */
     }
-    
 </style>

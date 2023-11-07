@@ -209,8 +209,8 @@ pre[class*="language-"] {
 }
 
 @media (max-width: 768px) {
-  #content-outer{
-    // margin-top: 200px;
+  #updown {
+    display: none;
   }
   #bd-placeholder-img {
     display: block;
