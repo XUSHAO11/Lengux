@@ -3,15 +3,20 @@ $(document).ready(function () {
     if ($(".headertop").css("height") == "0px") {
       $(".headertop").addClass("screen-headerblock")
       $(".header-top").css({
-        'top': '420px',
+        'top': '500px',
+        'background':'#fff'
       })
     } else {
       $(".headertop").removeClass("screen-headerblock")
       $(".header-top").css({
         'top': '0px',
       })
+      
     }
+   
+ 
   });
+  
   // 置顶
   $("#scrolTOP").click(function () {
     var myTimer = -1;
@@ -33,14 +38,14 @@ $(document).ready(function () {
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollTop === 0) {
       $('.header-top').css({
-        'background':'rgba(255,255,255,0)',
-        'border-bottom':'none'
+        'background': 'rgba(255,255,255,0)',
+        'border-bottom': 'none'
       })
-      
-    }else{
+
+    } else {
       $('.header-top').css({
-        'background':'rgba(255,255,255,255)',
-        'border-bottom':'1px solid #fff'
+        'background': 'rgba(255,255,255,255)',
+        // 'border-bottom': '1px solid #fff'
       })
     }
     if (scrollTop >= 383) {
@@ -58,28 +63,38 @@ $(document).ready(function () {
   }
 
   document.querySelector('.timer').innerHTML = getTime();
-
-  $("#updown").click(() => {
-    window.scrollTo({
-      top: window.document.querySelector("#content-outer").clientHeight,
-      behavior: "smooth"
+  $(window).scroll(function () {
+    var toTop = document.querySelector("#content-outer").offsetTop
+    $("#updown").click(() => {
+      window.scrollTo({
+        top: toTop,
+        behavior: "smooth"
+      })
     });
+
   })
 });
+
+// 监听地址栏变化
+if (window.location.pathname !== "/") {
+  window.scrollTo({
+    top: 900,
+    behavior: "smooth"
+  });
+}
+
+
+
 // 响应式优化
 if ($(".list").click) {
   $(window).resize(function () {
     $(".headertop").removeClass("screen-headerblock")
+    $(".header-top").css({
+      'top':'0px'
+    })
   });
 }
-// 监听地址栏变化
-if (window.location.pathname !== "/") {
 
-  window.scrollTo({
-    top: window.document.querySelector("#content-outer").clientHeight,
-    behavior: "smooth"
-  });
-}
 // 浏览器搞笑标题
 var OriginTitle = document.title;
 var titleTime;
@@ -109,3 +124,7 @@ const egg = `
    ░ ░      ░      ░   ░ ░ ░ ░   ░  ░░░ ░ ░  ░    ░  
      ░  ░   ░  ░         ░       ░    ░      ░    ░        @Lengux. `;
 console.log(egg);
+
+
+
+

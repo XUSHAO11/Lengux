@@ -91,6 +91,9 @@
     .menu-list {
       display: none;
     }
+    .header-top{
+      position: static;
+    }
   }
   @media (min-width: 768px) {
     .menu-list {
