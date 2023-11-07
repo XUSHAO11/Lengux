@@ -1,0 +1,30 @@
+<div class="bottom-link">
+    <div style="width: 100%;">
+        <% theme.link.forEach(links=> { %>
+            <a href=<%= links.href %>>
+                <img class="avatar" src=<%= links.avatar %> alt="">
+                <span>
+                    <%= links.title %>
+                </span>
+            </a>
+            <% }); %>
+    </div>
+</div>
+<style>
+    .bottom-link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .bottom-link a{
+        padding: 0 10px;
+    }
+</style>

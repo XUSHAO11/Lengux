@@ -4,7 +4,7 @@ $(document).ready(function () {
       $(".headertop").addClass("screen-headerblock")
       $(".header-top").css({
         'top': '500px',
-        'background': '#fff'
+        'background-color': ' rgba(255, 255, 255, 0.5019607843)'
       })
     } else {
       $(".headertop").removeClass("screen-headerblock")
@@ -62,7 +62,21 @@ $(document).ready(function () {
         'opacity': "0"
       })
     }
-
+    if (scrollToptop > 0) {
+      $(".header-top").css({
+        'background': "#314373"
+      })
+      $('.header-top>.menu-list>a').css({
+        'color': '#f4f4f4',
+      });
+    }else{
+      $(".header-top").css({
+        'background': ""
+      })
+      $('.header-top>.menu-list>a').css({
+        'color': '#000',
+      });
+    }
   })
 });
 

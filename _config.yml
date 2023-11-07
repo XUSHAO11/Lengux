@@ -34,12 +34,15 @@ svg:
   # 代码行折叠
   hand-index: /img/github.svg
 
-
-# 播放器 默认true打开、false关闭
+# 播放器
 musicredio: false
+
+# 黑夜模式
+dark: false
 
 # 本地搜索
 search:
+  acquiesce: true
   path: search.xml
   field: post
   content: true
@@ -48,14 +51,28 @@ search:
 # 打字机内容
 typewriter: This is a Lengux blog.
 
-# slider 侧栏一言
+# slider
+## 侧栏一言
 hitokoto: https://v1.hitokoto.cn/?encode=js&select=%23hitokoto
+hitokotoIstrue: true
+
+# 侧栏标题
+silder:
+  title: true
 
 # banner 名言
-famousSaying: "We sat and drank with the sun on our shoulders and felt like free men. We could have
-                been tarring the roof of one of our own houses. We were the lords of all creation. As for Andy，he spent
-                that break hunkered in the shade，a strange little smile on his face，watching us drink his beer."
+famousSaying:
+  "We sat and drank with the sun on our shoulders and felt like free men. We could have
+  been tarring the roof of one of our own houses. We were the lords of all creation. As for Andy，he spent
+  that break hunkered in the shade，a strange little smile on his face，watching us drink his beer."
 
+# 底部友链
+linkhidden: true
+link:
+  - links: 1
+    title: zixu
+    href: https://xushao.top
+    avatar: /favicon.ico
 
 # footer版权
 # Lengux-github

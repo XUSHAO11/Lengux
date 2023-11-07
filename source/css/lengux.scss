@@ -195,7 +195,7 @@ pre[class*="language-"] {
 }
 .archive-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #local-search-result {
   position: absolute;
@@ -207,7 +207,6 @@ pre[class*="language-"] {
 .darkmode-toggle{
   z-index: 999999;
 }
-
 @media (max-width: 768px) {
   #updown {
     display: none;

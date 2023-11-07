@@ -1,13 +1,12 @@
 .header-top {
   position: fixed;
   width: 100%;
-  padding: 0 10%;
-  height: 80px;
+  padding: 0 17%;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0;
-  background-color: #ffffff80;
   z-index:9099999;
   transition: all .3s;
   .menu-list {
@@ -91,9 +90,6 @@
 @media (max-width: 768px) {
     .menu-list {
       display: none;
-    }
-    .header-top{
-      position: static;
     }
   }
   @media (min-width: 768px) {

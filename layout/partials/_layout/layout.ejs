@@ -29,11 +29,16 @@
                           <%- partial('partials/sidebar')%>
                         </div>
                       </div>
+                      <% if (theme.linkhidden) {%>
+                        <%- partial('partials/_layout/link')%>
+                          <% } %>
                     </main>
+
                   </div>
                 </div>
                 <%- partial('partials/footer')%>
                   <%- partial('partials/_global/scroltop')%>
+
         </body>
         <% if (theme.scripts !==undefined && theme.scripts.length> 0) { %>
           <% theme.scripts.forEach(url=> { %>
@@ -51,5 +56,6 @@
     var path = "<%= config.root %>" + search_path;
     searchFunc(path, 'local-search-input', 'local-search-result');
   </script>
-
-  <%- partial('partials/_global/dark')%>
+  <% if (theme.dark) { %>
+    <%- partial('partials/_global/dark')%>
+      <%} %>
