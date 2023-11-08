@@ -13,9 +13,9 @@
                 <div class="row g-0  rounded overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
                   <div class="col-auto d-none d-lg-block">
                     <% if (post.img) {%>
-                      <img class="bd-placeholder-img" width="100%" height="250" src=<%=post.img%> alt="">
+                      <img class="bd-placeholder-img"  width="300" height="250" src=<%=post.img%> alt="">
                       <% }else{ %>
-                        <img class="bd-placeholder-img" width="100%" height="250" src=<%=theme.page.img%> alt="">
+                        <img class="bd-placeholder-img"  width="300" height="250" src=<%=theme.page.img%> alt="">
                         <% } %>
                   </div>
                   <div class="col p-4 d-flex flex-column position-static" style="background-color: #f8f9fa;">
@@ -26,14 +26,17 @@
                     <div class="mb-1 text-muted">
                       <% if (post.article=="" ) {%>
                         <%=theme.page.article%>
-                          <%} %>
+                          <%}else{%>
                             <%=post.article%>
+                              <% } %>
+
                     </div>
                     <p class="card-text mb-auto">
                       <% if (post.intro=="" ) {%>
                         <%=theme.page.intro%>
-                          <%} %>
+                          <%}else{%>
                             <%=post.intro%>
+                              <% } %>
                     </p>
                     <tim e datetime="<%=post.date.toJSON()%>" class="stretched-link">
                       <div>
@@ -128,5 +131,8 @@
       button:hover .circle .icon.arrow {
         background: #fff;
         transform: translate(.5rem, 0);
+      }
+      .bd-placeholder-img{
+        border-radius: 3px;
       }
     </style>

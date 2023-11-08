@@ -52,10 +52,11 @@ author: lengux
 
 ```
 ---
-title: "文章标题"
-intro: "文章副标题"
-img: "文章封面"
-article: "文章标签"
+# md文章默认
+page:
+  article:  # 标签
+  intro:    # 文章摘要
+  img:      # 文章缩略图
 ---
 ```
 > theme: Lengux
