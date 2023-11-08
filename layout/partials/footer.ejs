@@ -6,3 +6,15 @@
       <div><a href="https://beian.miit.gov.cn/">豫ICP备2022014432号-1</a></div>
     </div>
   </div>
+
+  
+  <% if (theme.highlightjs) { %>
+    <!-- Highlight.js -->
+    <link rel="stylesheet"
+          href="/css/github.min.css">
+    <script src="/js/highlight.min.js">
+    </script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <% } %>

@@ -15,7 +15,7 @@ avatars: https://avatars.githubusercontent.com/u/52852249?v=4
 # main menu navigation
 menu:
   首页: /
-  # 关于: /about
+  关于: /about
   # 分类: /categories
   归档: /archives
   友链: /link
@@ -73,6 +73,13 @@ link:
     title: zixu
     href: https://xushao.top
     avatar: /favicon.ico
+
+# 代码高亮 codeHighlighting
+highlightjs: true
+
+
+# RSS订阅
+rss: /atom.xml
 
 # footer版权
 # Lengux-github

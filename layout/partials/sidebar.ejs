@@ -1,7 +1,9 @@
 <div class="position-sticky" style="top: 2rem;">
-
+ <% if (theme.search.acquiesce) {%>
+      <%- partial('partials/_global/search')%>
+        <% } %>
   <div class=" mb-3 personalCard rounded">
-
+   
 
     <div class="bgcolor"></div>
     <img src="/favicon.ico" alt="" class="avatar">
@@ -21,9 +23,7 @@
     </div>
 
   </div>
-  <% if (theme.search.acquiesce) {%>
-    <%- partial('partials/_global/search')%>
-      <% } %>
+  
 
         <!-- <div class="p-4">
           <h4 class="fst-italic">Archives</h4>
