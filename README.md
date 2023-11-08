@@ -74,6 +74,5 @@ page:
  <a href="https://github.com/XUSHAO11"><img src="https://avatars.githubusercontent.com/u/52852249?v=4" alt="yangshaoxu" style="width: 50px;height:50px;"></a> 
 
 ## 📷 Screenshots
-<img src="https://picss.sunbangyan.cn/2023/10/31/8e2e37135665aea20db8ebd4c8bb36cf.png" alt="Lengux" />
-<img src="https://img1.imgtp.com/2023/11/02/d1irA5LG.jpeg" alt="Lengux" />
+<img src="https://img1.imgtp.com/2023/11/08/i1jscNz1.png" alt="Lengux" />
 
