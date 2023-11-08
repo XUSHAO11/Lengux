@@ -68,6 +68,7 @@ page:
 - [x] 评论 （valine)
 - [x] 打字机效果
 - [x] <a href="https://darkmodejs.learn.uno/">darkmode🌓</a>
+- [x] Rss
 
 ## ✨ Contributors
 
