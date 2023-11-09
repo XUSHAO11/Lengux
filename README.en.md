@@ -72,8 +72,8 @@ page:
  <a href="https://github.com/XUSHAO11"><img src="https://avatars.githubusercontent.com/u/52852249?v=4" alt="yangshaoxu" style="width: 50px;height:50px;"></a> 
 
 ## 📷 Screenshots
-pc:
-<img src="https://img1.imgtp.com/2023/11/08/ndLTGPmD.jpeg" alt="Lengux" width="50%"/>
-Move:
-<img src="https://img1.imgtp.com/2023/11/08/5vuoCazn.png" alt="Lengux" width="50%"/>
+pc: <br>
+<img src="https://img1.imgtp.com/2023/11/08/ndLTGPmD.jpeg" alt="Lengux" /><br>
+Move:<br>
+<img src="https://img1.imgtp.com/2023/11/08/5vuoCazn.png" alt="Lengux" />
 
