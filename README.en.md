@@ -1,5 +1,5 @@
-# Lengux （使用<a href="https://www.bootcss.com/"></a> bootstript 构建的一款 Hexo 主题 非常简洁）
-
+# Lengux （a Hexo theme built using <a href="https://www.bootcss.com/"></a> bootstript is very concise）
+<a href="./README.md"><button>翻译</button></a>
 ## 💻 Installation
 
 ```
@@ -7,7 +7,7 @@ git clone https://github.com/XUSHAO11/Lengux.git
 ```
 
 - node>=12
-- 修改hexo根目录 _config.yml
+- Example Modify the hexo root directory "_config.yml"
 
 ```
 theme: Lengux
@@ -16,20 +16,20 @@ highlight:
   enable: false
 ```
 
-### 安装依赖
+### Installation dependency
 
 ```
 npm install hexo-renderer-sass
 npm install hexo-generator-search
 ```
 
-# 1、安装rss插件
+# 1、Install rss plug-in
 
-在站点根目录下安装
+Install it in the site root directory
 ```
 npm install hexo-generator-feed
 ```
-## 2、hexo根目录配置_config.yml文件，启用插件
+## 2、The hexo root configures the _config.yml file to enable the plug-in
 ```
 # Extensions
 plugins:
@@ -40,19 +40,17 @@ feed:
   path: atom.xml
   limit: 20
 ```
-### 3、在Lengux主题添加RSS订阅配置
-# RSS订阅
+### 3、Add an RSS subscription configuration to the Lengux topic
 rss: /atom.xml
-
 ```
 title: lengux
 author: lengux
 ```
-### 文章标题配置
+### Article title configuration
 
 ```
 ---
-# md文章默认
+# md article default
 page:
   article:  # 标签
   intro:    # 文章摘要
@@ -62,11 +60,11 @@ page:
 > theme: Lengux
 
 ## 🎉 Features
-- [x] 卡片UI设计
-- [x] 两列布局
-- [x] 响应式网页设计
-- [x] 评论 （valine)
-- [x] 打字机效果
+- [x] Rss
+- [x] Card UI design
+- [x] Responsive web design
+- [x] valine
+- [x] Typewriter effect
 - [x] <a href="https://darkmodejs.learn.uno/">darkmode🌓</a>
 
 ## ✨ Contributors
@@ -74,6 +72,8 @@ page:
  <a href="https://github.com/XUSHAO11"><img src="https://avatars.githubusercontent.com/u/52852249?v=4" alt="yangshaoxu" style="width: 50px;height:50px;"></a> 
 
 ## 📷 Screenshots
-<img src="https://picss.sunbangyan.cn/2023/10/31/8e2e37135665aea20db8ebd4c8bb36cf.png" alt="Lengux" />
-<img src="https://img1.imgtp.com/2023/11/02/d1irA5LG.jpeg" alt="Lengux" />
+pc:
+<img src="https://img1.imgtp.com/2023/11/08/ndLTGPmD.jpeg" alt="Lengux" width="50%"/>
+Move:
+<img src="https://img1.imgtp.com/2023/11/08/5vuoCazn.png" alt="Lengux" width="50%"/>
 
