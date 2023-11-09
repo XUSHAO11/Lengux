@@ -1,5 +1,5 @@
 # Lengux （a Hexo theme built using <a href="https://www.bootcss.com/"></a> bootstript is very concise）
-<a href="./README.md"><button>翻译</button></a>
+<a href="./README.md">翻译</a>
 ## 💻 Installation
 
 ```
