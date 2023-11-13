@@ -1,4 +1,4 @@
-# Lengux （a Hexo theme built using <a href="https://www.bootcss.com/"></a> bootstript is very concise）
+# Lengux-theme
 <a href="./README.md">翻译</a>
 ## 💻 Installation
 
