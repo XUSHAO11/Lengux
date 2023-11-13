@@ -1,87 +1,78 @@
-<div class="position-sticky" style="top: 2rem;">
+<div class="position-sticky">
   <% if (theme.search.acquiesce) {%>
-    <%- partial('partials/_global/search')%>
-      <% } %>
-
-        <!-- about -->
-        <% if (theme.sildertrue) {%>
-          <div class="aboutcard">
-            <img src="http://q1.qlogo.cn/g?b=qq&nk=1217671134&s=100" alt="" class="avatar">
-            <div style="font-weight: 700;">
+    <div class="card">
+      <%- partial('partials/_global/search')%>
+    </div>
+    <% } %>
+      <div class="card">
+        <div style="background-color: #0F172A;padding: 20px;text-align: center;"><img
+            src="http://q1.qlogo.cn/g?b=qq&nk=1217671134&s=100" alt=""  style="border-radius: 100%;">
+        </div>
+        <div class="card-body">
+          <% if (theme.sildertrue) {%>
+            <h5 class="card-title">
               <%=theme.silder.title%>
-            </div>
-            <p>
-              <%=theme.silder.about%>
-            </p>
-            <div class="mb-0">
+            </h5>
+            <% } %>
+          <p class="card-text">
+            <%=theme.silder.about%>
+          </p>
+          <p class="card-text"><small class="text-muted">
               <% if (theme.hitokotoIstrue) {%>
                 <p id="hitokoto">
                   <script src=<%=theme.hitokoto%> > </script>
                 </p>
                 <% } %>
-            </div>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" id="linkshear">
-              <a href=<%=theme.github %>>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                  class="bi bi-github darksvg" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                </svg>
-              </a>
-              <a href=<%=theme.twitter %>>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                  class="bi bi-twitter darksvg" viewBox="0 0 16 16">
-                  <path
-                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                </svg>
-              </a>
-              <a href=<%=theme.display %>>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                  class="bi bi-display darksvg" viewBox="0 0 16 16">
-                  <path
-                    d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
-                </svg>
-              </a>
-  
-            </div>
-          </div>
-          <% } %>
-        <hr>
-
-        <% if (theme.linkhidden) {%>
-        <p class="ptitle">友情链接</p>
-        <div>
+            </small></p>
+        </div>
+      </div>
+      <% if (theme.linkhidden) {%>
+        <div class="card cardtop">
+          <div style="background-color: #0F172A;padding:0 10px;color: #fff;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+          </svg>&nbsp;友情链接</div>
+          <div style="padding: 10px;">
             <%- partial('partials/_layout/silder_link')%>
           </div>
-          <!-- 只在主页生效 -->
-          <hr>
-          <% } %>
-
-          <% if (theme.sildertags) {%>
-            <p class="ptitle">标签</p>
-            <% if (page.posts !==undefined && page.posts.length> 0) { %>
-    
-              <% let tagCount={}; %>
-                <% page.posts.each(tag=> {
-                  if (tagCount[tag.article]) {
-                  tagCount[tag.article] += 1;
-                  } else {
-                  tagCount[tag.article] = 1;
-                  }
-                  }); %>
-    
-                  <div class="tagbox">
-                    <% Object.keys(tagCount).forEach(tag=> { %>
-                    <div class="tagcard"><%= tag %></div>   <span>，</span>
+        </div>
+        <% } %>
+        <% if (theme.sildertags) {%>
+          <div class="card cardtop">
+            <div style="background-color: #0F172A;padding:0 10px;color: #fff;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmarks" viewBox="0 0 16 16">
+              <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z"/>
+              <path d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z"/>
+            </svg>&nbsp;标签</div>
+            <div style="padding: 10px;">
+              <% if (page.posts !==undefined && page.posts.length> 0) { %>
+                <% let tagCount={}; %>
+                  <% page.posts.each(tag=> {
+                    if (tagCount[tag.article]) {
+                    tagCount[tag.article] += 1;
+                    } else {
+                    tagCount[tag.article] = 1;
+                    }
+                    }); %>
+                    <div class="tagbox">
+                      <% Object.keys(tagCount).forEach(tag=> { %>
+                        <span class="tagcard">
+                          <%= tag %>
+                        </span> 
                         <!-- <%= tagCount[tag] %> -->
                         <% }); %>
-                  </div>
-                  <% } %>
-            <%  } %>
-      
-
+                    </div>
+                    <% } %>
+            </div>
+          </div>
+          <% } %>
+  
 </div>
 
-<style>
 
-</style>
+
+
+        
+        
+         
+           

@@ -24,34 +24,17 @@
     width: 100px;
   }
 }
-// silder
-.aboutcard {
-  text-align: center;
-  img {
-    margin: 2rem 0;
-  }
-  p {
-    padding: 2rem 0;
-  }
-  .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-  }
+#hitokoto{
+  font-size: 14px;
 }
-.ptitle{
-  color: #22a39f;
+.cardtop{
+  margin-top: 1rem;
 }
-.tagbox{
-  display: flex;
-  .tagcard{
-    border: 1px solid #333;
-    padding:0 3px;
-    border-radius: 7px;
-    transition: all .2s;
-  }
-  .tagcard:hover{
-    border-bottom: 1px solid #22a39f;
-  }
+.tagcard{
+  padding: 3px;
 }
-
+.tagcard:hover{
+  border-bottom: 2px solid #22a39f;
+  
+  border-radius: 3px;
+}

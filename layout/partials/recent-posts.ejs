@@ -18,12 +18,15 @@
                         <img class="bd-placeholder-img"  width="300" height="250" src=<%=theme.page.img%> alt="">
                         <% } %>
                   </div>
-                  <div class="col p-4 d-flex flex-column position-static" style="background-color: #f8f9fa;">
+                  <div class="col p-4 d-flex flex-column position-static " style="border: 1px solid rgba(0, 0, 0, 0.175);">
 
                     <h3 class="mb-0">
                       <%=post.title%>
                     </h3>
                     <div class="mb-1 text-muted">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                      </svg>
                       <% if (post.article=="" ) {%>
                         <%=theme.page.article%>
                           <%}else{%>
@@ -39,7 +42,10 @@
                               <% } %>
                     </p>
                     <tim e datetime="<%=post.date.toJSON()%>" class="stretched-link">
-                      <div>
+                      <div style="display: flex;align-items: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>&nbsp;
                         <%=date(post.date)%>
                       </div>
                       <button class="learn-more">
