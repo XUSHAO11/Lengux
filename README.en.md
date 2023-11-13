@@ -52,9 +52,9 @@ author: lengux
 ---
 # md article default
 page:
-  article:  # 标签
-  intro:    # 文章摘要
-  img:      # 文章缩略图
+  article:  # tag
+  intro:    # Abstract of article
+  img:      # Article thumbnail
 ---
 ```
 > theme: Lengux
