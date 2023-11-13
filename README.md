@@ -1,4 +1,4 @@
-# Lengux （使用<a href="https://www.bootcss.com/"></a> bootstript 构建的一款 Hexo 主题 非常简洁）
+# Lengux-theme
 <a href="./README.en.md">English</a>
 ## 💻 Installation
 
@@ -67,7 +67,7 @@ page:
 - [x] 响应式网页设计
 - [x] 评论 （valine)
 - [x] 打字机效果
-- [x] <a href="https://darkmodejs.learn.uno/">darkmode🌓</a>
+- [x] 深色模式
 
 ## ✨ Contributors
 

@@ -1,4 +1,4 @@
-# Lengux （a Hexo theme built using <a href="https://www.bootcss.com/"></a> bootstript is very concise）
+# Lengux-theme
 <a href="./README.md">翻译</a>
 ## 💻 Installation
 
@@ -52,9 +52,9 @@ author: lengux
 ---
 # md article default
 page:
-  article:  # 标签
-  intro:    # 文章摘要
-  img:      # 文章缩略图
+  article:  # tag
+  intro:    # Abstract of article
+  img:      # Article thumbnail
 ---
 ```
 > theme: Lengux
@@ -65,7 +65,7 @@ page:
 - [x] Responsive web design
 - [x] valine
 - [x] Typewriter effect
-- [x] <a href="https://darkmodejs.learn.uno/">darkmode🌓</a>
+- [x] Dark pattern
 
 ## ✨ Contributors
 
