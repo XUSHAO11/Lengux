@@ -10,8 +10,6 @@
   z-index:9099999;
   transition: all .3s;
   .menu-list {
-    display: flex;
-    align-items: center;
     a {
       padding: 0 20px;
     }
@@ -77,14 +75,14 @@
     align-items: flex-start;
     flex-direction: column;
     margin-top: 67px;
-    margin-left: 50px;
+    margin-left: 10%;
     line-height: 30px;
     a{
         font-family: EduTASBeginnera;
     }
   }
   .menu-top {
-    margin-left: 50px;
+    margin-left: 10%;
   }
 }
 

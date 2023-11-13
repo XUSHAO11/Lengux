@@ -42,7 +42,6 @@
 }
 #bottom-outer {
   padding: 20px 0;
-  border-top: 1px solid #f1f4f8;
   text-align: center;
   background-color: #314373;
   color: #CBD2DC;
@@ -70,4 +69,8 @@
 }
 .icon {
   width: 100px;
+}
+.darkmodes{
+  cursor: pointer;
+  color: #000;
 }

@@ -4,7 +4,7 @@ $(document).ready(function () {
       $(".headertop").addClass("screen-headerblock")
       $(".header-top").css({
         'top': '500px',
-        'background-color': ' rgba(255, 255, 255, 0.5019607843)'
+        'background-color': '#314373'
       })
     } else {
       $(".headertop").removeClass("screen-headerblock")
@@ -13,10 +13,9 @@ $(document).ready(function () {
       })
 
     }
-
-
+   
+    
   });
-
   // 置顶
   $("#toptop").click(function () {
     var myTimer = -1;
@@ -69,13 +68,19 @@ $(document).ready(function () {
       $('.header-top>.menu-list>a').css({
         'color': '#f4f4f4',
       });
-    }else{
+      $('#list').css({
+        'color': '#fff'
+      })
+    } else {
       $(".header-top").css({
         'background': ""
       })
       $('.header-top>.menu-list>a').css({
         'color': '#000',
       });
+      $('#list').css({
+        'color': '#000'
+      })
     }
   })
 });
@@ -86,7 +91,7 @@ if (window.location.pathname !== "/") {
     top: 900,
     behavior: "smooth"
   });
-  
+
 }
 
 
