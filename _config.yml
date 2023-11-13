@@ -5,42 +5,41 @@ title: "Lengux"
 # logo
 ## https://avatars.githubusercontent.com/u/52852249?v=4
 logo: /img/logo.png
-# avatars
+# banner-avatars
 avatars: https://avatars.githubusercontent.com/u/52852249?v=4
 #---------------------------
-# 全局
 # Global
 #---------------------------
 
 # main menu navigation
 menu:
-  首页: /
-  关于: /about
-  # 分类: /categories
-  归档: /archives
-  友链: /link
+  home: /
+  about: /about
+  # sort: /categories
+  archives: /archives
+  link: /link
 
-# md文章默认
+# mdArticleDefault
 page:
-  article: hexo # 标签
-  intro: hexo new My New Post # 文章摘要
-  img: https://img1.imgtp.com/2023/11/03/8oj1k5qo.jpg # 文章缩略图
+  article: hexo # tag
+  intro: hexo new My New Post # abstractOfArticle
+  img: https://img1.imgtp.com/2023/11/03/8oj1k5qo.jpg # articleThumbnail
 
-# 黑夜模式
+# nightMode
 darkmork: true
 
-# 打字机内容
+# typewriterContent
 typewriter: This is a Lengux blog.
 
 # slider
-## 侧栏一言
+## sidebarWord
 hitokoto: https://v1.hitokoto.cn/?encode=js&select=%23hitokoto
 hitokotoIstrue: true
-## 侧栏标题
+## sidebarTitle
 sildertrue: true
 silder:
   title: Hey!
-  ### 侧栏 about
+  ### sideBar about
   about: Austin Kleon (@austinkleon) is awriter who draws. He's thebestselling author of Steal LikeAn Artist and
             other books.Read more一
 # silder-link
@@ -53,9 +52,9 @@ link:
 # silder-tags
 sildertags: true
 
-## 本地搜索
+## localSearch
 search:
-  acquiesce: true # 默认打开
+  acquiesce: true # openByDefault
   path: search.xml
   field: post
   content: true
@@ -67,20 +66,20 @@ twitter: https://tweetdeck.twitter.com/login
 # display
 display: /
 
-# banner 名言
+# banner famousSaying
 famousSaying:
   "We sat and drank with the sun on our shoulders and felt like free men. We could have
   been tarring the roof of one of our own houses. We were the lords of all creation. As for Andy，he spent
   that break hunkered in the shade，a strange little smile on his face，watching us drink his beer."
 
 
-# 代码高亮 codeHighlighting
+# codeHighlighting
 highlightjs: true
 
-# RSS订阅
+# rSS
 rss: /atom.xml
 
-# footer版权
+# footerCopyright
 # Lengux-github
 Lenguxgithub: https://github.com/XUSHAO11/lengux.git
 Lenguxname: Lengux
