@@ -65,7 +65,7 @@ page:
 - [x] Responsive web design
 - [x] valine
 - [x] Typewriter effect
-- [x] <a href="https://darkmodejs.learn.uno/">darkmode🌓</a>
+- [x] Dark pattern
 
 ## ✨ Contributors
 
