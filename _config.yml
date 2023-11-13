@@ -27,7 +27,7 @@ page:
   img: https://img1.imgtp.com/2023/11/03/8oj1k5qo.jpg # 文章缩略图
 
 # 黑夜模式
-dark: false
+darkmork: true
 
 # 打字机内容
 typewriter: This is a Lengux blog.
@@ -83,7 +83,7 @@ rss: /atom.xml
 # footer版权
 # Lengux-github
 Lenguxgithub: https://github.com/XUSHAO11/lengux.git
-Lenguxname: LengUx
+Lenguxname: Lengux
 
 stylesheets:
   - /css/lengux.css
@@ -93,6 +93,6 @@ scripts:
   - /js/bootstrap.bundle.min.js
   - /js/jquery-2.0.2.min.js
   - /js/lengux.js
+  - /js/dark.js
   - /js/search.js
   - /js/darkmode-js.min.js
-  - /js/dark.js

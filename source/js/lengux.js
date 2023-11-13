@@ -86,6 +86,7 @@ if (window.location.pathname !== "/") {
     top: 900,
     behavior: "smooth"
   });
+  
 }
 
 
@@ -129,7 +130,6 @@ const egg = `
    ░ ░      ░      ░   ░ ░ ░ ░   ░  ░░░ ░ ░  ░    ░  
      ░  ░   ░  ░         ░       ░    ░      ░    ░        @Lengux. `;
 console.log(egg);
-
 
 
 

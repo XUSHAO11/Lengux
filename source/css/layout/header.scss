@@ -10,6 +10,8 @@
   z-index:9099999;
   transition: all .3s;
   .menu-list {
+    display: flex;
+    align-items: center;
     a {
       padding: 0 20px;
     }
