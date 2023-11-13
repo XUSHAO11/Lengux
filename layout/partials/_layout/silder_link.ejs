@@ -2,7 +2,6 @@
     <div style="width: 100%;">
         <% theme.link.forEach(links=> { %>
             <a href=<%= links.href %>>
-                <img class="avatar" src=<%= links.avatar %> alt="">
                 <span>
                     <%= links.title %>
                 </span>
@@ -12,11 +11,10 @@
 </div>
 <style>
     .bottom-link {
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+        /* background-color: antiquewhite; */   
     }
 
     .avatar {
@@ -25,6 +23,6 @@
         border-radius: 15px;
     }
     .bottom-link a{
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
 </style>

@@ -8955,7 +8955,7 @@ fieldset:disabled .btn {
 }
 
 .fst-italic {
-    font-style: italic !important
+    font-style: italic !important;
 }
 
 .fst-normal {

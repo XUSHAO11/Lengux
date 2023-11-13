@@ -26,27 +26,8 @@ page:
   intro: hexo new My New Post # 文章摘要
   img: https://img1.imgtp.com/2023/11/03/8oj1k5qo.jpg # 文章缩略图
 
-# 用于浏览器标签的图标
-# Icon for browser tab
-svg:
-  # 代码行复制
-  stickies: /img/github.svg
-  # 代码行折叠
-  hand-index: /img/github.svg
-
-# 播放器
-musicredio: false
-
 # 黑夜模式
 dark: false
-
-# 本地搜索
-search:
-  acquiesce: true
-  path: search.xml
-  field: post
-  content: true
-  template: themes/lengux/search.xml
 
 # 打字机内容
 typewriter: This is a Lengux blog.
@@ -55,10 +36,36 @@ typewriter: This is a Lengux blog.
 ## 侧栏一言
 hitokoto: https://v1.hitokoto.cn/?encode=js&select=%23hitokoto
 hitokotoIstrue: true
-
-# 侧栏标题
+## 侧栏标题
+sildertrue: true
 silder:
-  title: true
+  title: Hey!
+  ### 侧栏 about
+  about: Austin Kleon (@austinkleon) is awriter who draws. He's thebestselling author of Steal LikeAn Artist and
+            other books.Read more一
+# silder-link
+linkhidden: true
+link:
+  - links: 1
+    title: zixu
+    href: https://xushao.top
+    avatar: /favicon.ico
+# silder-tags
+sildertags: true
+
+## 本地搜索
+search:
+  acquiesce: true # 默认打开
+  path: search.xml
+  field: post
+  content: true
+  template: themes/lengux/search.xml
+# github
+github: https://github.com/XUSHAO11/Lengux
+# twitter
+twitter: https://tweetdeck.twitter.com/login
+# display
+display: /
 
 # banner 名言
 famousSaying:
@@ -66,17 +73,9 @@ famousSaying:
   been tarring the roof of one of our own houses. We were the lords of all creation. As for Andy，he spent
   that break hunkered in the shade，a strange little smile on his face，watching us drink his beer."
 
-# 底部友链
-linkhidden: true
-link:
-  - links: 1
-    title: zixu
-    href: https://xushao.top
-    avatar: /favicon.ico
 
 # 代码高亮 codeHighlighting
 highlightjs: true
-
 
 # RSS订阅
 rss: /atom.xml
