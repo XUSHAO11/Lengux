@@ -15,7 +15,7 @@ avatars: https://avatars.githubusercontent.com/u/52852249?v=4
 menu:
   home: /
   about: /about
-  # sort: /categories
+  # categories: /categories
   archives: /archives
   link: /link
 
