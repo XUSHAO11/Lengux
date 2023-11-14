@@ -54,8 +54,10 @@ author: lengux
 ---
 # md文章默认
 page:
-  article:  # 标签
+  title: Hello World
+  label:    # 标签
   intro:    # 文章摘要
+  date:     # 日期
   img:      # 文章缩略图
 ---
 ```
