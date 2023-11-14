@@ -19,7 +19,7 @@ menu:
   link: /link
   # category: /category
   # tag: /tag
-  
+
 # mdArticleDefault
 page:
   tag: hexo # tag
@@ -41,8 +41,7 @@ sildertrue: true
 silder:
   title: Hey!
   ### sideBar about
-  about: Austin Kleon (@austinkleon) is awriter who draws. He's thebestselling author of Steal LikeAn Artist and
-            other books.Read more一
+  about: In the sea of coding, I am Lengux, pursuing creativity and user experience.
 # silder-link
 linkhidden: true
 link:
