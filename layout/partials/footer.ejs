@@ -1,20 +1,17 @@
 <div id="bottom-outer">
-    <div id="bottom-inner">
-      Made with 💛 by
-      <a href=<%=theme.Lenguxgithub%> > <%= theme.Lenguxname %> </a>
-      and some fantastic contributors! <a href="http://hexo.io">hexo blog framework</a>
-      <div><a href="https://beian.miit.gov.cn/">豫ICP备2022014432号-1</a></div>
-    </div>
+  <div id="bottom-inner">
+    Made with 💛 by
+    <a href=<%=theme.Lenguxgithub%> style="color:#0d6efd"> <%= theme.Lenguxname %> </a>
+    and some fantastic contributors! <a href="http://hexo.io" style="color:#0d6efd">hexo blog framework</a>
+    <div><a href="https://beian.miit.gov.cn/" style="color:#0d6efd"><%= theme.forTheRecord %></a></div>
   </div>
-
-  
-  <% if (theme.highlightjs) { %>
-    <!-- Highlight.js -->
-    <link rel="stylesheet"
-          href="/css/github.min.css">
-    <script src="/js/highlight.min.js">
-    </script>
-    <script>
-        hljs.initHighlightingOnLoad();
-    </script>
-    <% } %>
+</div>
+<% if (theme.highlightjs) { %>
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="/css/github.min.css">
+  <script src="/js/highlight.min.js">
+  </script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <% } %>

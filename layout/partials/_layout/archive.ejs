@@ -1,13 +1,42 @@
-<% page.posts.each(article => { %>
-    <h1>
-      <%= page.title %>
-    </h1>
-    <div class="archive-item">
-      <a href="<%=url_for(article.path)%>">
-        <%=article.title%>
-      </a>
-      <time datetime="<%=date_xml(article.date)%>">
-        <%=date(article.date)%>
-      </time>
-    </div>
-  <% }) %>
+  <section class="archive">
+    <ul class="post-archive">
+    <% page.posts.each(function (post) { %>
+        <li class="post-item">
+            <span class="post-date"><%= date(post.date, "YYYY-MM-DD") %></span>
+            <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+        </li>
+    <% }) %>
+    </ul>
+</section>
+<%- partial('partials/paginator') %>
+
+
+<style>
+  .archive {
+    margin: 1em auto;
+    padding: 30px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 2px #ddd;
+
+    .post-archive {
+        list-style: none;
+        padding: 0;
+
+        .post-item {
+            margin: 5px 0;
+
+            .post-date {
+                display: inline-block;
+                margin-right: 10px;
+                color: #BABABA;
+            }
+
+            .post-title {
+                color: #368CCB;
+                text-decoration: none;
+            }
+        }
+    }
+}
+</style>

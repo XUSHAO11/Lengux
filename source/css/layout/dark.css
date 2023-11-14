@@ -53,6 +53,9 @@ body.DarkMode .mb-0,
 body.DarkMode .button-text,
 body.DarkMode .archive-item,
 body.DarkMode .archive-item a,
+body.DarkMode .page-nav,
+body.DarkMode .page-nav>.extend,
+body.DarkMode .page-nav>.page-number,
 body.DarkMode .bottom-link a {
   color: #fff !important;
 }

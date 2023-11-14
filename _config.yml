@@ -6,7 +6,7 @@ title: "Lengux"
 ## https://avatars.githubusercontent.com/u/52852249?v=4
 logo: /img/logo.png
 # banner-avatars
-avatars: https://avatars.githubusercontent.com/u/52852249?v=4
+avatars: /img/banner.png
 #---------------------------
 # Global
 #---------------------------
@@ -15,10 +15,10 @@ avatars: https://avatars.githubusercontent.com/u/52852249?v=4
 menu:
   home: /
   about: /about
-  # categories: /categories
   archives: /archives
   link: /link
-
+  # category: /category
+  # tag: /tag
 # mdArticleDefault
 page:
   article: hexo # tag
@@ -83,6 +83,25 @@ rss: /atom.xml
 # Lengux-github
 Lenguxgithub: https://github.com/XUSHAO11/lengux.git
 Lenguxname: Lengux
+forTheRecord: 豫ICP备2022014432号-1
+
+# Algolia Search
+# For more information: https://www.algolia.com
+algolia_search:
+  enable: false
+  hits:
+    per_page: 5
+
+
+#archive分页每页显示文章数
+archive_generator:
+    per_page: 5
+#tag分页每页显示文章数
+tag_generator:
+    per_page: 10
+#category分页每页显示文章数
+category_generator: 
+    per_page: 10
 
 stylesheets:
   - /css/lengux.css

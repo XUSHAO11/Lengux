@@ -1,11 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
 a {
   text-decoration: none;
   color: black;
@@ -121,6 +113,6 @@ li {
 }
 @import "./bootstrap.min.css";
 @import "./layout/header.scss";
-@import "./index.scss";
-@import "./layout.scss";
-@import "./dark.css"
+@import "./layout/index.scss";
+@import "./layout/layout.scss";
+@import "./layout/dark.css"

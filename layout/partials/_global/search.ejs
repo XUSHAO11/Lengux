@@ -1,47 +1,14 @@
 <form class="d-flex">
     <div class="input-container">
-        <p class="bash-text" style="margin-bottom: 0 !important;">
+        <span class="bash-text" style="margin-bottom: 0 !important;">
             <span class="user">user</span><span class="vm">@ui-verse</span>:<span class="char">~</span>$
-        </p>
-        <input class="input" placeholder="sudo rm -rf css/" type="text" id="local-search-input" required=""
+        </span>
+        <span>
+            <input class="input" placeholder="sudo rm -rf css/" type="text" id="local-search-input" required=""
             placeholder="<%- theme.search.placeholder%> " aria-label="Search">
+        </span>
+        
 
     </div>
 </form>
 <div id="local-search-result"></div>
-
-
-<style>
-    .input-container {
-        display: flex;
-        align-items: center;
-        background-color: #0F172A;
-        padding: 10px;
-        width: 100%;
-        gap: 5px;
-        font-size: .8rem;
-    }
-
-    .input-container .bash-text {
-        color: white;
-    }
-
-    .input-container .bash-text .user {
-        color: #E879F9;
-    }
-
-    .input-container .bash-text .vm {
-        color: #2DD4BF;
-    }
-
-    .input-container .bash-text .char {
-        color: #A78BFA;
-    }
-
-    .input-container input[type=text].input {
-        background-color: transparent;
-        border: none;
-        outline: none;
-        color: white;
-    }
-</style>
