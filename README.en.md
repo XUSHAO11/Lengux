@@ -1,5 +1,5 @@
 # Lengux-theme
-<a href="./README.md">翻译</a>
+<a href="./README.en.md">English</a>
 ## 💻 Installation
 
 ```
@@ -7,8 +7,7 @@ git clone https://github.com/XUSHAO11/Lengux.git
 ```
 
 - node>=12
-- Example Modify the hexo root directory "_config.yml"
-
+- Change the hexo root directory _config.yml
 ```
 theme: Lengux
 -------------
@@ -23,13 +22,11 @@ npm install hexo-renderer-sass
 npm install hexo-generator-search
 ```
 
-# 1、Install rss plug-in
-
-Install it in the site root directory
+### Install rss plug-in
 ```
 npm install hexo-generator-feed
 ```
-## 2、The hexo root configures the _config.yml file to enable the plug-in
+2、hexo root directory _config.yml added
 ```
 # Extensions
 plugins:
@@ -40,30 +37,31 @@ feed:
   path: atom.xml
   limit: 20
 ```
-### 3、Add an RSS subscription configuration to the Lengux topic
+3、在Lengux-_config.yml
+Add an RSS feed
+```
 rss: /atom.xml
 ```
-title: lengux
-author: lengux
-```
-### Article title configuration
+### Article title
 
 ```
 ---
 # md article default
 page:
-  article:  # tag
+  title: Hello World
+  label:    # tag
   intro:    # Abstract of article
+  date:     # date
   img:      # Article thumbnail
 ---
 ```
 > theme: Lengux
 
 ## 🎉 Features
-- [x] Rss
 - [x] Card UI design
+- [x] Two-column layout
 - [x] Responsive web design
-- [x] valine
+- [x] Review (valine)
 - [x] Typewriter effect
 - [x] Dark pattern
 
