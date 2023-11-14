@@ -1,7 +1,7 @@
 # html lang
 language: en
 # title
-title: "Lengux"
+title: Lengux
 # logo
 ## https://avatars.githubusercontent.com/u/52852249?v=4
 logo: /img/logo.png
@@ -19,9 +19,10 @@ menu:
   link: /link
   # category: /category
   # tag: /tag
+  
 # mdArticleDefault
 page:
-  article: hexo # tag
+  tag: hexo # tag
   intro: hexo new My New Post # abstractOfArticle
   img: https://img1.imgtp.com/2023/11/03/8oj1k5qo.jpg # articleThumbnail
 

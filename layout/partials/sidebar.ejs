@@ -48,10 +48,10 @@
               <% if (page.posts !==undefined && page.posts.length> 0) { %>
                 <% let tagCount={}; %>
                   <% page.posts.each(tag=> {
-                    if (tagCount[tag.article]) {
-                    tagCount[tag.article] += 1;
+                    if (tagCount[tag.label]) {
+                    tagCount[tag.label] += 1;
                     } else {
-                    tagCount[tag.article] = 1;
+                    tagCount[tag.label] = 1;
                     }
                     }); %>
                     <div class="tagbox">
