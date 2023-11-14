@@ -1,5 +1,5 @@
 # Lengux-theme
-<a href="./README.en.md">English</a>
+<a href="./README.md">翻译</a>
 ## 💻 Installation
 
 ```
