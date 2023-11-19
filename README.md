@@ -13,7 +13,7 @@ git clone https://github.com/XUSHAO11/Lengux.git
 theme: Lengux
 -------------
 highlight:
-  enable: false
+  hljs: true
 ```
 
 ### 安装依赖
